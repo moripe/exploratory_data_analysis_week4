@@ -12,6 +12,6 @@ aggregaTot_by_year <- aggregate(Emissions ~ year, NEI, sum)
 png('Plot1.png')
 barplot(height=aggregaTot_by_year$Emissions, 
         names.arg=aggregaTot_by_year$year, xlab="Years", 
-        ylab=expression('total PM'[2.5]*' emission'),
-        main=expression('Total PM'[2.5]*' emissions at various years'))
+        ylab=expression('PM2.5 Emissions in tons'),
+        main=expression('Total PM2.5 emissions at various years'))
 dev.off()
